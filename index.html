@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Inputs</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>Inputs</h1>
+    <p>Enter a value into one of the input boxes in the second column of the table below and watch that value show up on the third column of the input table!</p>
+    <table>
+      <thead>
+        <th>Input Type</th>
+        <th>Input</th>
+        <th>Value Entered By User</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Input type="checkbox"</td>
+          <td>
+            <input id="checkInput" type="checkbox" name="yesNo" value="yes">Yes<br>
+          </td>
+          <td id="checkVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="color"</td>
+          <td><input id="colorInput" type="color" name="colorPicker"></td>
+          <td id="colorVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="date"</td>
+          <td><input id="dateInput" type="date" name="datePicker"></td>
+          <td id="dateVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="email"</td>
+          <td><input id="emailInput" type="email" name="emailAddr"></td>
+          <td id="emailVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="month"</td>
+          <td><input id="monthInput" type="month" name="monthYear"></td>
+          <td id="monthVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="number"</td>
+          <td><input id="numInput" type="number" name="numberPicker"></td>
+          <td id="numVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="password"</td>
+          <td><input id="passInput" type="password" name="passWord"></td>
+          <td id="passVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="radio"</td>
+          <td>
+            <input id="yesInput" type="radio" name="boolean" value="true"> True<br>
+            <input id="noInput" type="radio" name="boolean" value="false"> False<br>
+          </td>
+          <td id="radioVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="range"</td>
+          <td><input id="rangeInput" type="range" name="numRange"></td>
+          <td id="rangeVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="search"</td>
+          <td><input id="searchInput" type="search" name="searchBox"></td>
+          <td id="searchVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="tel"</td>
+          <td><input id="telInput" type="tel" name="telNum"></td>
+          <td id="telVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="text"</td>
+          <td><input id="textInput" type="text" name="textBox"></td>
+          <td id="textVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="time"</td>
+          <td><input id="timeInput" type="time" name="timeVal"></td>
+          <td id="timeVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="url"</td>
+          <td><input id="urlInput" type="url" name="webUrl"></td>
+          <td id="urlVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="select"</td>
+          <td>
+            <select id="selectInput" name="food" multiple>
+              <option value="pizza">Pizza</option>
+              <option value="sushi">Sushi</option>
+              <option value="hotdog">Hotdog</option>
+              <option value="cheeseburger">Cheeseburger</option>
+            </select>
+          </td>
+          <td id="selectVal"></td>
+        </tr>
+        <tr>
+          <td>Input type="datalist"</td>
+          <td>
+            <label>States on the West Coast:</label>
+            <input id="listInput" list="westernStates" name="westStates">
+            <datalist id="westernStates">
+              <option value="california">California</option>
+              <option value="oregon">Oregon</option>
+              <option value="washington">Washington</option>
+            </datalist>
+          </td>
+          <td id="listVal"></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--CDN link for jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
